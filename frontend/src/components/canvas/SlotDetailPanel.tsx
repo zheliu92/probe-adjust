@@ -84,12 +84,7 @@ export function SlotDetailPanel({ slot, onClose, onViewTemplate }: Props) {
   }
 
   return (
-    <div className="w-80 border-l border-gray-200 bg-white flex flex-col h-full">
-      <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200">
-        <h3 className="font-semibold text-sm text-gray-800">Data Slot</h3>
-        <button onClick={onClose} className="text-gray-400 hover:text-gray-600 text-lg leading-none">✕</button>
-      </div>
-
+    <div className="flex flex-col h-full">
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
         {/* Name */}
         <div>
