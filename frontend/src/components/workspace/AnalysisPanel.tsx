@@ -262,14 +262,12 @@ function RequestForm({ files, onSubmit }: {
   const [label, setLabel] = useState('')
   const [selected, setSelected] = useState<Set<string>>(new Set(files.map(f => f.id)))
   const [prompt, setPrompt] = useState('')
-  const [showPrompt, setShowPrompt] = useState(false)
   const [submitting, setSubmitting] = useState(false)
 
-  // Keep selection in sync when new files are added
   const toggleFile = (id: string) => {
     setSelected(prev => {
       const next = new Set(prev)
-      const nowIncluded = !next.has(id) // about to add
+      const nowIncluded = !next.has(id)
       next.has(id) ? next.delete(id) : next.add(id)
       logEvent('source_toggled', { source_id: id, action: nowIncluded ? 'include' : 'exclude' })
       return next
@@ -295,22 +293,25 @@ function RequestForm({ files, onSubmit }: {
       <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">New analysis request</h3>
 
       <div className="space-y-2.5">
-        {/* Label */}
-        <input
-          className="input text-sm"
-          placeholder='Label, e.g. "Trust vs. error rate"'
-          value={label}
-          onChange={e => setLabel(e.target.value)}
-          onKeyDown={e => e.key === 'Enter' && handleSubmit()}
-        />
+        {/* Request name */}
+        <div>
+          <p className="label mb-1">Request name</p>
+          <input
+            className="input text-sm"
+            placeholder='e.g. "Trust vs. error rate"'
+            value={label}
+            onChange={e => setLabel(e.target.value)}
+            onKeyDown={e => e.key === 'Enter' && handleSubmit()}
+          />
+        </div>
 
         {/* File selection */}
         <div>
           <p className="label mb-1">Data sources to include</p>
           {files.length === 0 ? (
-            <p className="text-xs text-gray-400 italic">No data files uploaded for this participant yet.</p>
+            <p className="text-xs text-gray-400 italic">No data files uploaded yet.</p>
           ) : (
-            <div className="space-y-1 max-h-40 overflow-y-auto">
+            <div className="space-y-1 max-h-36 overflow-y-auto">
               {files.map(f => (
                 <label key={f.id} className="flex items-center gap-2 text-xs cursor-pointer select-none">
                   <input
@@ -326,23 +327,17 @@ function RequestForm({ files, onSubmit }: {
           )}
         </div>
 
-        {/* Custom prompt */}
-        <button
-          className="text-xs text-indigo-500 hover:underline flex items-center gap-1"
-          onClick={() => setShowPrompt(v => !v)}
-        >
-          {showPrompt ? '▾' : '▸'} Add custom focus prompt (optional)
-        </button>
-        {showPrompt && (
+        {/* Custom focus prompt — always visible, single text area */}
+        <div>
+          <p className="label mb-1">Focus prompt <span className="font-normal text-gray-400">(optional)</span></p>
           <textarea
-            className="input text-sm min-h-[60px] resize-y"
+            className="input text-sm min-h-[56px] resize-y"
             placeholder='e.g. "Focus on whether trust ratings align with task error patterns"'
             value={prompt}
             onChange={e => setPrompt(e.target.value)}
           />
-        )}
+        </div>
 
-        {/* Submit — ALWAYS enabled; mock returns results after 5s */}
         <button
           className="btn-primary w-full justify-center"
           onClick={handleSubmit}
@@ -353,7 +348,7 @@ function RequestForm({ files, onSubmit }: {
 
         {files.length === 0 && (
           <p className="text-[10px] text-amber-600 text-center">
-            Upload participant data first (left panel) to include real files in the analysis.
+            Upload participant data in the left panel first.
           </p>
         )}
       </div>

@@ -77,9 +77,9 @@ export function InterviewReadyPage() {
       <div className="bg-white border-b border-gray-200 px-6 py-3 flex items-center gap-4 print:hidden">
         <button
           className="text-sm text-indigo-500 hover:underline"
-          onClick={() => navigate(`/workspace/${participantId}`)}
+          onClick={() => navigate('/conduct')}
         >
-          ← Back to workspace
+          ← Back to session setup
         </button>
         <div className="flex-1" />
         {mode && (
@@ -123,39 +123,40 @@ export function InterviewReadyPage() {
         )}
       </div>
 
-      {/* Print / read-only styles */}
+      {/* Print / read-only styles — mirrors ProtocolEditorPanel's .protocol-editor */}
       <style>{`
         .protocol-view {
-          font-size: 1rem;
-          line-height: 1.85;
-          color: #111827;
+          font-size: 0.9375rem;
+          line-height: 1.8;
+          color: #1f2937;
         }
         .protocol-view h2 {
           font-size: 0.875rem;
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 0.06em;
-          color: #4b5563;
-          margin-top: 2rem;
+          color: #6b7280;
+          margin-top: 1.75rem;
           margin-bottom: 0.5rem;
           padding-bottom: 0.25rem;
-          border-bottom: 1px solid #d1d5db;
+          border-bottom: 1px solid #e5e7eb;
         }
         .protocol-view h2:first-child { margin-top: 0; }
         .protocol-view h3 {
-          font-size: 1rem;
+          font-size: 0.9375rem;
           font-weight: 700;
           color: #111827;
           margin-top: 1.25rem;
-          margin-bottom: 0.2rem;
+          margin-bottom: 0.25rem;
         }
         .protocol-view p { margin-bottom: 0.5rem; }
-        .protocol-view em { color: #6b7280; }
+        .protocol-view em { color: #6b7280; font-style: italic; }
+        .protocol-view strong { color: #111827; }
         .protocol-view ul, .protocol-view ol {
           padding-left: 1.5rem;
           margin-bottom: 0.75rem;
         }
-        .protocol-view li { margin-bottom: 0.2rem; }
+        .protocol-view li { margin-bottom: 0.25rem; }
         @media print {
           .print\\:hidden { display: none !important; }
           .protocol-view { font-size: 11pt; line-height: 1.7; }
