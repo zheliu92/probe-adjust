@@ -1,0 +1,16 @@
+DEMOGRAPHIC QUESTIONNAIRE RESPONSES — P1
+Date: 2024-09-10
+---
+
+D1. Age: 34
+
+D2. Gender: Male
+
+D3. Highest level of education: Master's
+
+D4. Smart home device usage frequency: Regularly (weekly or more)
+
+D5. Comfort with technology (1-5): 4
+
+D6. Used voice-controlled interfaces before: Yes
+    How often: Daily (Amazon Echo at home)

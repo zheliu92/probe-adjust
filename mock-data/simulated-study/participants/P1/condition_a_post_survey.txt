@@ -1,0 +1,27 @@
+POST-CONDITION SURVEY RESPONSES — P1 — Condition A (Dashboard UI)
+Date: 2024-09-10
+---
+
+PC1. I was able to complete the tasks successfully.
+     Rating: 6
+
+PC2. The interface responded the way I expected.
+     Rating: 4
+
+PC3. I felt in control while using this interface.
+     Rating: 5
+
+PC4. I trust this interface to carry out my intentions accurately.
+     Rating: 6
+
+PC5. I found this interface easy to use.
+     Rating: 5
+
+PC6. I felt frustrated at any point while using this interface.
+     Rating: 3
+
+PC7. Overall, how satisfied are you with this interface?
+     Rating: 6
+
+PC8. Open response:
+     "The time format surprised me — I typed it naturally and it just got cleared without much explanation. Also finding where to favourite a device took longer than I expected. But once I found things, they worked as expected."

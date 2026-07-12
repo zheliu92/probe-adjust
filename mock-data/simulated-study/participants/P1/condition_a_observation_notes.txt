@@ -1,0 +1,11 @@
+OBSERVATION NOTES — P1 — Condition A (Dashboard UI)
+Observer: Dr. Chen
+---
+
+L1: Participant seemed at ease at the start. Navigated to lights quickly.
+L2: T2 — noticeable pause at time input field. Looked at the screen for ~8 seconds before entering. Did not read error message aloud initially.
+L3: [!] T3 took considerably longer than expected. Participant appeared to scan the full screen multiple times without finding Devices. Mild visible frustration (leaned back, sighed once).
+L4: After the long-press error on T3, participant chuckled and said "oops". Did not seem distressed.
+L5: T4 — moved quickly and confidently. Scene creation flow appeared intuitive to participant.
+L6: [!] End of session: Participant's verbal summary was quite positive despite the errors. Said "I could see everything laid out" — notable given the navigation difficulties on T3.
+L7: Body language relaxed throughout. No signs of significant stress. Seemed engaged with the task.

@@ -1,0 +1,171 @@
+{
+  "study": {
+    "id": "default",
+    "title": "Smart Home Controller UX Study",
+    "description": "A 2-condition experience-focused mixed-methods study comparing two UI designs (Dashboard vs. Voice-First) for a smart home controller. Participants complete tasks under each condition. Post-experience interview probes subjective experience and trust."
+  },
+  "blocks": [
+    {
+      "type": "plain",
+      "label": "Introduction & Consent",
+      "position": 0,
+      "slots": []
+    },
+    {
+      "type": "feedback",
+      "label": "Demographic Survey",
+      "position": 1,
+      "slots": [
+        {
+          "name": "Demographic Questionnaire",
+          "data_type": "quantitative",
+          "data_nature": "subjective",
+          "slot_kind": "template",
+          "template_file": "demographic_survey_template.txt"
+        },
+        {
+          "name": "Demographic Responses",
+          "data_type": "quantitative",
+          "data_nature": "subjective",
+          "slot_kind": "data"
+        }
+      ]
+    },
+    {
+      "type": "feedback",
+      "label": "Baseline Trust Survey",
+      "position": 2,
+      "slots": [
+        {
+          "name": "Baseline Survey Template",
+          "data_type": "quantitative",
+          "data_nature": "subjective",
+          "slot_kind": "template",
+          "template_file": "baseline_survey_template.txt"
+        },
+        {
+          "name": "Baseline Survey Responses",
+          "data_type": "quantitative",
+          "data_nature": "subjective",
+          "slot_kind": "data"
+        }
+      ]
+    },
+    {
+      "type": "experience",
+      "label": "Condition A — Dashboard UI",
+      "position": 3,
+      "slots": [
+        {
+          "name": "System Log",
+          "data_type": "quantitative",
+          "data_nature": "objective",
+          "slot_kind": "data",
+          "annotation": "Focus on task completion times, error counts, and retry events. T= timestamps are in seconds from session start."
+        },
+        {
+          "name": "Think-Aloud Transcript",
+          "data_type": "qualitative",
+          "data_nature": "subjective",
+          "slot_kind": "data",
+          "annotation": "Utterances prefixed with [confusion] or [positive] indicate researcher-coded valence. Pay particular attention to mentions of control, trust, or confusion."
+        },
+        {
+          "name": "Observation Notes",
+          "data_type": "qualitative",
+          "data_nature": "subjective",
+          "slot_kind": "data",
+          "annotation": "Researcher field notes. Lines marked [!] indicate moments the researcher flagged as notable during the session."
+        }
+      ]
+    },
+    {
+      "type": "feedback",
+      "label": "Post-Condition A Survey",
+      "position": 4,
+      "slots": [
+        {
+          "name": "Post-Condition Survey Template",
+          "data_type": "quantitative",
+          "data_nature": "subjective",
+          "slot_kind": "template",
+          "template_file": "post_condition_survey_template.txt"
+        },
+        {
+          "name": "Post-Condition A Responses",
+          "data_type": "quantitative",
+          "data_nature": "subjective",
+          "slot_kind": "data"
+        }
+      ]
+    },
+    {
+      "type": "experience",
+      "label": "Condition B — Voice-First UI",
+      "position": 5,
+      "slots": [
+        {
+          "name": "System Log",
+          "data_type": "quantitative",
+          "data_nature": "objective",
+          "slot_kind": "data",
+          "annotation": "Same log format as Condition A. Compare error rates and task times across conditions."
+        },
+        {
+          "name": "Think-Aloud Transcript",
+          "data_type": "qualitative",
+          "data_nature": "subjective",
+          "slot_kind": "data",
+          "annotation": "Note any mentions of the word 'natural', 'awkward', or 'control'. Compare valence patterns with Condition A transcript."
+        },
+        {
+          "name": "Observation Notes",
+          "data_type": "qualitative",
+          "data_nature": "subjective",
+          "slot_kind": "data"
+        }
+      ]
+    },
+    {
+      "type": "feedback",
+      "label": "Post-Condition B Survey",
+      "position": 6,
+      "slots": [
+        {
+          "name": "Post-Condition Survey Template",
+          "data_type": "quantitative",
+          "data_nature": "subjective",
+          "slot_kind": "template",
+          "template_file": "post_condition_survey_template.txt"
+        },
+        {
+          "name": "Post-Condition B Responses",
+          "data_type": "quantitative",
+          "data_nature": "subjective",
+          "slot_kind": "data"
+        }
+      ]
+    },
+    {
+      "type": "feedback",
+      "label": "Post-Experience Interview",
+      "position": 7,
+      "slots": [
+        {
+          "name": "Interview Protocol",
+          "data_type": "qualitative",
+          "data_nature": "subjective",
+          "slot_kind": "template",
+          "template_file": "interview_protocol.txt",
+          "annotation": "Q1-Q3 cover overall impressions. Q4-Q6 probe trust and sense of control. Q7-Q9 compare the two conditions directly. Q10 is open-ended for anything the participant wants to add."
+        },
+        {
+          "name": "Interview Transcript",
+          "data_type": "qualitative",
+          "data_nature": "subjective",
+          "slot_kind": "data"
+        }
+      ]
+    }
+  ]
+}

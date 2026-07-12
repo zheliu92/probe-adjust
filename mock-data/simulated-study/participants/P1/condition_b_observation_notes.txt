@@ -1,0 +1,9 @@
+OBSERVATION NOTES — P1 — Condition B (Voice-First UI)
+Observer: Dr. Chen
+---
+
+L1: Participant immediately spoke commands without hesitation. Body language very relaxed.
+L2: [!] Voice command recognition failure on T2 did not seem to bother participant at all — tried a rephrased command immediately without visible frustration.
+L3: T3 completed very fast. Participant appeared pleased — small smile.
+L4: [!] T4 — voice misinterpretation caused a real error (floor lamp turned off). Participant noticed, corrected manually, but remained calm throughout. Said "the voice thing is really nice for simple stuff."
+L5: [positive] End of session — participant said they preferred this interface for everyday use, explicitly citing not having to "look for anything." Consistent with survey and transcript.

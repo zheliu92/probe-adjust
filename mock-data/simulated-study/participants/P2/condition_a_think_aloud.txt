@@ -1,0 +1,13 @@
+THINK-ALOUD TRANSCRIPT — P2 — Condition A (Dashboard UI)
+Researcher: Dr. Chen | Transcribed by: RA
+---
+
+[T=0:18] Okay lights... um, let me find lights. I tapped climate by mistake. Going back. There, lights. Living room. Slider to 50. Okay done.
+
+[T=1:00] Thermostat. [confusion] Where is that? Scenes? No. Climate, okay. Temperature, 22. Schedule for 7am... I typed 7:00 AM and it just cleared it. [confusion] Oh does it want a different format? Let me try 07:00. Yes that worked. Now save. Where's save? I'm scrolling... there it is at the bottom.
+
+[T=3:00] Front door lock to favourites. Hmm. [confusion] I have no idea where to look. Tried Scenes — no. Automations — no. Devices? Under Rooms, maybe? I see Entrance. Front door lock is there. How do I favourite it? Long press... it just opened a details screen. That's not right. There must be a star. [confusion] I can barely see it, it's so small. Tapped it... did it work? I'm not sure. Tap again. Okay now it looks different.
+
+[T=5:40] Scenes again. Create new scene. Movie Night... it rejected the exclamation mark again. Movie Night, fine. Select devices — I'll turn them all off... wait I need to keep the floor lamp on. Let me re-check. Floor lamp is off too. Toggle it back on. Save.
+
+[T=8:18] [confusion] That was pretty confusing overall. I felt like I was searching a lot. The icons are small and I never really knew where I was in the app. I didn't feel very in control if I'm honest.

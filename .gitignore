@@ -1,0 +1,44 @@
+# Database (local prototype state)
+backend/*.db
+backend/*.db-shm
+backend/*.db-wal
+
+# Uploaded files and interaction logs (study data — keep out of git)
+backend/uploads/
+backend/logs/
+!backend/uploads/.gitkeep
+!backend/logs/.gitkeep
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Environment secrets — never commit
+backend/.env
+frontend/.env.production
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Misc
+*.log
+*.tmp

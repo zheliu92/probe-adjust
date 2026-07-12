@@ -1,0 +1,57 @@
+{
+  "session_id": "P1_conditionB",
+  "condition": "Voice-First UI",
+  "start_time": "2024-09-10T10:45:00Z",
+  "tasks": [
+    {
+      "task_id": "T1",
+      "task_label": "Set living room lights to 50% brightness",
+      "start_offset_s": 8,
+      "end_offset_s": 19,
+      "duration_s": 11,
+      "completed": true,
+      "errors": []
+    },
+    {
+      "task_id": "T2",
+      "task_label": "Schedule thermostat to 22°C at 7am tomorrow",
+      "start_offset_s": 26,
+      "end_offset_s": 54,
+      "duration_s": 28,
+      "completed": true,
+      "errors": [
+        {"offset_s": 31, "type": "recognition_error", "description": "Voice command 'set thermostat to 22' not recognized on first attempt; repeated with 'schedule thermostat 22 degrees at 7am'"}
+      ]
+    },
+    {
+      "task_id": "T3",
+      "task_label": "Add front door lock to favourites",
+      "start_offset_s": 61,
+      "end_offset_s": 93,
+      "duration_s": 32,
+      "completed": true,
+      "errors": []
+    },
+    {
+      "task_id": "T4",
+      "task_label": "Create a 'Movie Night' scene turning off all lights except floor lamp",
+      "start_offset_s": 100,
+      "end_offset_s": 198,
+      "duration_s": 98,
+      "completed": true,
+      "errors": [
+        {"offset_s": 134, "type": "recognition_error", "description": "Phrase 'except the floor lamp' not parsed correctly; system turned off all lights including floor lamp"},
+        {"offset_s": 156, "type": "correction_required", "description": "Participant manually corrected floor lamp status via tap after voice command failed"}
+      ]
+    }
+  ],
+  "summary": {
+    "total_tasks": 4,
+    "completed_tasks": 4,
+    "total_errors": 3,
+    "total_duration_s": 198,
+    "median_task_duration_s": 30,
+    "longest_task": "T4",
+    "longest_task_duration_s": 98
+  }
+}

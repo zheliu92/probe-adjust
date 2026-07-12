@@ -1,0 +1,27 @@
+POST-CONDITION SURVEY RESPONSES — P2 — Condition A (Dashboard UI)
+Date: 2024-09-11
+---
+
+PC1. I was able to complete the tasks successfully.
+     Rating: 4
+
+PC2. The interface responded the way I expected.
+     Rating: 2
+
+PC3. I felt in control while using this interface.
+     Rating: 2
+
+PC4. I trust this interface to carry out my intentions accurately.
+     Rating: 3
+
+PC5. I found this interface easy to use.
+     Rating: 2
+
+PC6. I felt frustrated at any point while using this interface.
+     Rating: 6
+
+PC7. Overall, how satisfied are you with this interface?
+     Rating: 3
+
+PC8. Open response:
+     "I found it hard to know where things were. There are a lot of panels and tabs and I kept going to the wrong one. The favourite button was nearly invisible. The time format issue was frustrating because there was no hint that it needed 24-hour format. I completed everything but it took a long time."

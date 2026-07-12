@@ -1,0 +1,13 @@
+THINK-ALOUD TRANSCRIPT — P2 — Condition B (Voice-First UI)
+Researcher: Dr. Chen | Transcribed by: RA
+---
+
+[T=0:10] [positive] Oh, I just say it? "Set living room lights to 50 percent." Done! That's amazing.
+
+[T=0:28] "Schedule thermostat to 22 degrees at 7am." [positive] Yes, confirmed. Wow that was fast.
+
+[T=0:51] "Add front door lock to favourites." [positive] Perfect. Done.
+
+[T=1:13] Scene time. "Create a scene called Movie Night, turn off all lights except the floor lamp." [confusion] Hmm, it turned them all off. The floor lamp too. So it doesn't understand 'except'. Let me just tap to fix that one. Okay, floor lamp back on. Save. [positive] Okay even with that one hiccup, that was still so much faster than before.
+
+[T=2:42] [positive] Oh my goodness this was so much better. I didn't have to look for anything. I didn't go to the wrong place. I just spoke and it happened. The only problem was that complex exception command. But even that — I can work around it. I would absolutely use this every day. I feel like I'm actually in control when I can just say what I want rather than hunt through menus.

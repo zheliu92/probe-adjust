@@ -1,0 +1,17 @@
+BASELINE TRUST SURVEY
+Smart Home Controller UX Study
+-------------------------------
+Please rate your agreement with each statement before you begin the tasks.
+Scale: 1 = Strongly Disagree, 7 = Strongly Agree
+
+BT1. I generally trust automated systems to carry out tasks on my behalf.
+     Rating (1–7): ____
+
+BT2. I feel confident using new technology interfaces without prior training.
+     Rating (1–7): ____
+
+BT3. I prefer to have direct control over technology rather than letting it act autonomously.
+     Rating (1–7): ____
+
+BT4. I tend to feel frustrated when technology behaves in unexpected ways.
+     Rating (1–7): ____

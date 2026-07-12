@@ -1,0 +1,13 @@
+THINK-ALOUD TRANSCRIPT — P1 — Condition B (Voice-First UI)
+Researcher: Dr. Chen | Transcribed by: RA
+---
+
+[T=0:08] Okay, lights. "Set living room lights to 50 percent." [positive] Oh, done. That was instant.
+
+[T=0:26] Thermostat. "Set thermostat to 22." Hmm, nothing happened. [confusion] Let me try again. "Schedule thermostat 22 degrees at 7am." Okay that worked. So I need to say 'schedule'. Good to know.
+
+[T=1:01] Favourites. "Add front door lock to favourites." [positive] Yes! Perfect. That's exactly what I wanted.
+
+[T=1:40] Movie night scene. This might be tricky. "Create a scene called Movie Night, turn off all lights except the floor lamp." [confusion] Oh no it turned them all off. Let me check. Floor lamp is off too. So it didn't understand the 'except' part. Okay let me just tap the floor lamp back on manually. There. [positive] Okay I saved the scene. The voice thing is really nice for simple stuff but complex commands are a bit iffy.
+
+[T=3:18] [positive] Overall that felt really natural. Like I didn't have to look for anything or remember where controls are. I just said what I wanted. The only problem was that complex task with the exception. But even the first interface wouldn't have been faster for that task. I think I prefer this for everyday things.

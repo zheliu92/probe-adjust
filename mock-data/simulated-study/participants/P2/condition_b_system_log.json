@@ -1,0 +1,55 @@
+{
+  "session_id": "P2_conditionB",
+  "condition": "Voice-First UI",
+  "start_time": "2024-09-11T14:55:00Z",
+  "tasks": [
+    {
+      "task_id": "T1",
+      "task_label": "Set living room lights to 50% brightness",
+      "start_offset_s": 10,
+      "end_offset_s": 21,
+      "duration_s": 11,
+      "completed": true,
+      "errors": []
+    },
+    {
+      "task_id": "T2",
+      "task_label": "Schedule thermostat to 22°C at 7am tomorrow",
+      "start_offset_s": 28,
+      "end_offset_s": 44,
+      "duration_s": 16,
+      "completed": true,
+      "errors": []
+    },
+    {
+      "task_id": "T3",
+      "task_label": "Add front door lock to favourites",
+      "start_offset_s": 51,
+      "end_offset_s": 66,
+      "duration_s": 15,
+      "completed": true,
+      "errors": []
+    },
+    {
+      "task_id": "T4",
+      "task_label": "Create a 'Movie Night' scene turning off all lights except floor lamp",
+      "start_offset_s": 73,
+      "end_offset_s": 162,
+      "duration_s": 89,
+      "completed": true,
+      "errors": [
+        {"offset_s": 98, "type": "recognition_error", "description": "Phrase 'except the floor lamp' not parsed; system turned off all lights"},
+        {"offset_s": 118, "type": "correction_required", "description": "Participant manually toggled floor lamp back on"}
+      ]
+    }
+  ],
+  "summary": {
+    "total_tasks": 4,
+    "completed_tasks": 4,
+    "total_errors": 2,
+    "total_duration_s": 162,
+    "median_task_duration_s": 16,
+    "longest_task": "T4",
+    "longest_task_duration_s": 89
+  }
+}

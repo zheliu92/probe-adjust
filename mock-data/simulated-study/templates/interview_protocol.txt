@@ -1,0 +1,45 @@
+POST-EXPERIENCE INTERVIEW PROTOCOL
+Smart Home Controller UX Study
+-------------------------------
+Duration: ~30 minutes
+Format: Semi-structured. Follow the participant's lead. Probe with "Can you tell me more?" as needed.
+
+INTRODUCTION
+------------
+Thank you for completing both conditions. I'd like to ask you some questions about your experience. There are no right or wrong answers — I'm interested in your honest thoughts and feelings.
+
+--- SECTION 1: Overall Impressions ---
+
+Q1. Now that you've tried both interfaces, what's your overall impression of the experience?
+
+Q2. Was there any moment during today's session that stood out to you — positive or negative? What happened?
+
+Q3. How would you describe the experience to a friend who hasn't tried either system?
+
+--- SECTION 2: Trust and Sense of Control ---
+
+Q4. During the tasks, how much did you feel in control of what the system was doing?
+    [Probe: Was there a difference between the two conditions?]
+
+Q5. Were there any moments where you weren't sure what the system would do next?
+    [Probe: How did that make you feel?]
+
+Q6. How much did you trust the system to carry out your intentions accurately?
+    [Probe: Did that trust change over time within a condition, or between conditions?]
+
+--- SECTION 3: Comparing the Two Conditions ---
+
+Q7. If you had to choose one interface to use at home every day, which would you pick and why?
+
+Q8. What did you find most different between the Dashboard and Voice-First interfaces?
+
+Q9. Were there tasks that felt much easier or harder in one condition compared to the other?
+    [Probe: What made the difference?]
+
+--- SECTION 4: Open Reflection ---
+
+Q10. Is there anything about your experience today that we haven't discussed, and that you'd like to share?
+
+CLOSING
+-------
+Thank you. Your feedback is very valuable. Do you have any questions for me?

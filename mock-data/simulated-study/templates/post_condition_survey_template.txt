@@ -1,0 +1,30 @@
+POST-CONDITION SURVEY
+Smart Home Controller UX Study
+-------------------------------
+Please complete this survey immediately after finishing the condition.
+Scale: 1 = Strongly Disagree, 7 = Strongly Agree (unless stated otherwise)
+
+PC1. I was able to complete the tasks successfully.
+     Rating (1–7): ____
+
+PC2. The interface responded the way I expected.
+     Rating (1–7): ____
+
+PC3. I felt in control while using this interface.
+     Rating (1–7): ____
+
+PC4. I trust this interface to carry out my intentions accurately.
+     Rating (1–7): ____
+
+PC5. I found this interface easy to use.
+     Rating (1–7): ____
+
+PC6. I felt frustrated at any point while using this interface.
+     Rating (1–7): ____
+
+PC7. Overall, how satisfied are you with this interface?
+     1 (Very dissatisfied) — 2 — 3 — 4 — 5 — 6 — 7 (Very satisfied)
+     Rating: ____
+
+PC8. (Open) Describe any moment where the interface behaved in a way that surprised you:
+     ________________________________________________________________

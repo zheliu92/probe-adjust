@@ -1,0 +1,27 @@
+POST-CONDITION SURVEY RESPONSES — P1 — Condition B (Voice-First UI)
+Date: 2024-09-10
+---
+
+PC1. I was able to complete the tasks successfully.
+     Rating: 6
+
+PC2. The interface responded the way I expected.
+     Rating: 5
+
+PC3. I felt in control while using this interface.
+     Rating: 4
+
+PC4. I trust this interface to carry out my intentions accurately.
+     Rating: 4
+
+PC5. I found this interface easy to use.
+     Rating: 6
+
+PC6. I felt frustrated at any point while using this interface.
+     Rating: 3
+
+PC7. Overall, how satisfied are you with this interface?
+     Rating: 6
+
+PC8. Open response:
+     "The voice commands felt very natural for simple tasks. The complex scene creation was the only real pain point — it misunderstood 'except the floor lamp'. I had to fix it manually. But I'd probably use this every day for the basic stuff."

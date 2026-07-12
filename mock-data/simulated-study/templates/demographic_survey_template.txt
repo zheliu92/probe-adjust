@@ -1,0 +1,24 @@
+DEMOGRAPHIC QUESTIONNAIRE
+Smart Home Controller UX Study
+-------------------------------
+
+D1. Age: ____
+
+D2. Gender (optional): ____
+
+D3. Highest level of education completed:
+    [ ] High school  [ ] Bachelor's  [ ] Master's  [ ] Doctoral  [ ] Other: ____
+
+D4. How often do you use smart home devices (e.g., smart speakers, thermostats, lighting)?
+    [ ] Never
+    [ ] Rarely (less than once a month)
+    [ ] Occasionally (a few times a month)
+    [ ] Regularly (weekly or more)
+
+D5. How would you rate your overall comfort with technology?
+    1 (Not at all comfortable) — 2 — 3 — 4 — 5 (Very comfortable)
+    Your rating: ____
+
+D6. Have you used voice-controlled interfaces before (e.g., Siri, Alexa, Google Assistant)?
+    [ ] Yes  [ ] No
+    If yes, how often? ____

@@ -1,0 +1,61 @@
+{
+  "session_id": "P1_conditionA",
+  "condition": "Dashboard UI",
+  "start_time": "2024-09-10T10:05:00Z",
+  "tasks": [
+    {
+      "task_id": "T1",
+      "task_label": "Set living room lights to 50% brightness",
+      "start_offset_s": 12,
+      "end_offset_s": 28,
+      "duration_s": 16,
+      "completed": true,
+      "errors": []
+    },
+    {
+      "task_id": "T2",
+      "task_label": "Schedule thermostat to 22°C at 7am tomorrow",
+      "start_offset_s": 35,
+      "end_offset_s": 98,
+      "duration_s": 63,
+      "completed": true,
+      "errors": [
+        {"offset_s": 47, "type": "wrong_panel_opened", "description": "Opened 'Lighting' panel instead of 'Climate'"},
+        {"offset_s": 61, "type": "input_rejected", "description": "Entered time in 12h format; interface requires 24h format. Input cleared."}
+      ]
+    },
+    {
+      "task_id": "T3",
+      "task_label": "Add front door lock to favourites",
+      "start_offset_s": 105,
+      "end_offset_s": 244,
+      "duration_s": 139,
+      "completed": true,
+      "errors": [
+        {"offset_s": 118, "type": "navigation_error", "description": "Navigated to 'Scenes' instead of 'Devices'"},
+        {"offset_s": 143, "type": "navigation_error", "description": "Used browser back instead of in-app back; returned to home screen"},
+        {"offset_s": 178, "type": "target_missed", "description": "Long-pressed device card instead of tapping the star icon; triggered 'Device Details' overlay"}
+      ]
+    },
+    {
+      "task_id": "T4",
+      "task_label": "Create a 'Movie Night' scene turning off all lights except floor lamp",
+      "start_offset_s": 258,
+      "end_offset_s": 341,
+      "duration_s": 83,
+      "completed": true,
+      "errors": [
+        {"offset_s": 290, "type": "input_rejected", "description": "Scene name field rejected special characters; 'Movie Night!' re-entered as 'Movie Night'"}
+      ]
+    }
+  ],
+  "summary": {
+    "total_tasks": 4,
+    "completed_tasks": 4,
+    "total_errors": 6,
+    "total_duration_s": 341,
+    "median_task_duration_s": 46,
+    "longest_task": "T3",
+    "longest_task_duration_s": 139
+  }
+}

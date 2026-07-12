@@ -1,0 +1,13 @@
+THINK-ALOUD TRANSCRIPT — P1 — Condition A (Dashboard UI)
+Researcher: Dr. Chen | Transcribed by: RA
+---
+
+[T=0:12] Okay, so I need to set the lights... let me look around. I can see the tiles here. Lights, okay, living room. Tap that. There's a brightness slider... drag to 50. Done. [positive] Oh that was easy actually.
+
+[T=0:35] Now the thermostat thing. Hmm. I'll go to... Climate, I think? Wait, I tapped Lighting again. Back. Okay Climate. Good. Now set temperature... 22 degrees. Set time. Oh, it wants... it rejected my input. Ah, 24-hour format. Okay. 07:00. [confusion] I didn't know it needed that format. The label just says "time". Okay it worked.
+
+[T=1:45] Add the front door lock to favourites. Um. Where are the devices? I see Scenes, Rooms, Automations... Devices? Let me try Scenes — no that's not it. [confusion] I'm not sure where to look. Going back, back... oh I went all the way to the home screen. That's not right. Let me try Rooms. I can see the front door lock under Entrance. Now I need to favourite it. Long press? No that opened something else. [confusion] There must be a star button somewhere. Oh there it is, tiny star icon in the corner. Got it.
+
+[T=4:18] Movie night scene. Scenes tab, create new. Name it... Movie Night! Oh it won't let me use the exclamation mark. Fine. Movie Night. Now select devices. Turn off... all lights. But keep the floor lamp on. [positive] Okay I can individually toggle each one. This part makes sense. Save. Done.
+
+[T=5:41] Overall I think I got there but some things were a bit hidden. Like the favourite button was really small. And the time format thing tripped me up. But it felt like a proper dashboard, you know? [positive] I could see everything laid out. I actually liked that.

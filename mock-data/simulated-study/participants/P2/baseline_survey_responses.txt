@@ -1,0 +1,15 @@
+BASELINE TRUST SURVEY RESPONSES — P2
+Date: 2024-09-11
+---
+
+BT1. I generally trust automated systems to carry out tasks on my behalf.
+     Rating: 3
+
+BT2. I feel confident using new technology interfaces without prior training.
+     Rating: 3
+
+BT3. I prefer direct control over technology rather than letting it act autonomously.
+     Rating: 5
+
+BT4. I tend to feel frustrated when technology behaves in unexpected ways.
+     Rating: 5

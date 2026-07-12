@@ -1,0 +1,16 @@
+DEMOGRAPHIC QUESTIONNAIRE RESPONSES — P2
+Date: 2024-09-11
+---
+
+D1. Age: 28
+
+D2. Gender: Female
+
+D3. Highest level of education: Bachelor's
+
+D4. Smart home device usage frequency: Occasionally (a few times a month)
+
+D5. Comfort with technology (1-5): 3
+
+D6. Used voice-controlled interfaces before: Yes
+    How often: Occasionally (Siri on iPhone)

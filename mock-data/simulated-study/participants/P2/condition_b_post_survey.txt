@@ -1,0 +1,27 @@
+POST-CONDITION SURVEY RESPONSES — P2 — Condition B (Voice-First UI)
+Date: 2024-09-11
+---
+
+PC1. I was able to complete the tasks successfully.
+     Rating: 6
+
+PC2. The interface responded the way I expected.
+     Rating: 6
+
+PC3. I felt in control while using this interface.
+     Rating: 6
+
+PC4. I trust this interface to carry out my intentions accurately.
+     Rating: 6
+
+PC5. I found this interface easy to use.
+     Rating: 7
+
+PC6. I felt frustrated at any point while using this interface.
+     Rating: 2
+
+PC7. Overall, how satisfied are you with this interface?
+     Rating: 7
+
+PC8. Open response:
+     "Night and day compared to the dashboard. I never had to search for anything. I just told it what I wanted. The only thing it got wrong was the 'except' part in the scene creation, but everything else was perfect. I felt genuinely in control."

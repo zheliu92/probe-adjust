@@ -1,0 +1,66 @@
+{
+  "session_id": "P2_conditionA",
+  "condition": "Dashboard UI",
+  "start_time": "2024-09-11T14:10:00Z",
+  "tasks": [
+    {
+      "task_id": "T1",
+      "task_label": "Set living room lights to 50% brightness",
+      "start_offset_s": 18,
+      "end_offset_s": 52,
+      "duration_s": 34,
+      "completed": true,
+      "errors": [
+        {"offset_s": 24, "type": "wrong_panel_opened", "description": "Tapped 'Climate' tile first, then backtracked to 'Lights'"}
+      ]
+    },
+    {
+      "task_id": "T2",
+      "task_label": "Schedule thermostat to 22°C at 7am tomorrow",
+      "start_offset_s": 60,
+      "end_offset_s": 172,
+      "duration_s": 112,
+      "completed": true,
+      "errors": [
+        {"offset_s": 71, "type": "wrong_panel_opened", "description": "Opened 'Scenes' panel; returned to home after 15s"},
+        {"offset_s": 95, "type": "input_rejected", "description": "Entered time '7:00 AM'; rejected; re-entered as '07:00'"},
+        {"offset_s": 130, "type": "navigation_error", "description": "Save button not visible; scrolled for 20s before finding it"}
+      ]
+    },
+    {
+      "task_id": "T3",
+      "task_label": "Add front door lock to favourites",
+      "start_offset_s": 180,
+      "end_offset_s": 329,
+      "duration_s": 149,
+      "completed": true,
+      "errors": [
+        {"offset_s": 195, "type": "navigation_error", "description": "Tried 'Scenes' tab first"},
+        {"offset_s": 218, "type": "navigation_error", "description": "Tried 'Automations' tab"},
+        {"offset_s": 251, "type": "target_missed", "description": "Long-pressed device card 3 times before locating star icon"},
+        {"offset_s": 287, "type": "false_success", "description": "Thought task complete; star had not turned gold; tapped again to confirm"}
+      ]
+    },
+    {
+      "task_id": "T4",
+      "task_label": "Create a 'Movie Night' scene turning off all lights except floor lamp",
+      "start_offset_s": 340,
+      "end_offset_s": 498,
+      "duration_s": 158,
+      "completed": true,
+      "errors": [
+        {"offset_s": 362, "type": "input_rejected", "description": "Scene name rejected special characters"},
+        {"offset_s": 410, "type": "wrong_selection", "description": "Selected all lights off including floor lamp; had to toggle floor lamp back on separately"}
+      ]
+    }
+  ],
+  "summary": {
+    "total_tasks": 4,
+    "completed_tasks": 4,
+    "total_errors": 10,
+    "total_duration_s": 498,
+    "median_task_duration_s": 123,
+    "longest_task": "T4",
+    "longest_task_duration_s": 158
+  }
+}

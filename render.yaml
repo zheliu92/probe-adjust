@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: probe-adjust-api
+    runtime: python
+    region: oregon
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt && python seed.py
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///./probe_adjust.db
+      - key: STORAGE_BACKEND
+        value: local
+      - key: UPLOAD_DIR
+        value: ./uploads
+      - key: LOG_DIR
+        value: ./logs
+      - key: OPENAI_API_KEY
+        sync: false          # set manually in Render dashboard
+      - key: FRONTEND_ORIGIN
+        sync: false          # set to your GitHub Pages URL after deploy
+      - key: EXTRA_ORIGINS
+        sync: false          # comma-separated additional allowed origins
