@@ -6,7 +6,7 @@ on:
     paths:
       - 'frontend/**'
       - '.github/workflows/deploy-frontend.yml'
-  workflow_dispatch:   # allow manual trigger from GitHub UI
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -43,7 +43,9 @@ jobs:
         run: npm run build
         working-directory: frontend
         env:
-          # Your Render backend URL — set in GitHub repo: Settings → Secrets → Actions
+          # Asset base path for GitHub Pages — must match the repo name with slashes
+          VITE_BASE_PATH: /probe-adjust/
+          # Render backend URL — set in GitHub repo: Settings → Secrets → Actions
           # e.g. https://probe-adjust-api.onrender.com/api
           VITE_API_BASE_URL: ${{ secrets.VITE_API_BASE_URL }}
 
