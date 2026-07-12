@@ -9,6 +9,9 @@ services:
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
     envVars:
+      # Pin Python version — Render requires a fully qualified version here
+      - key: PYTHON_VERSION
+        value: 3.11.9
       - key: DATABASE_URL
         value: sqlite:///./probe_adjust.db
       - key: STORAGE_BACKEND
