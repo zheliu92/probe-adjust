@@ -38,25 +38,25 @@ function FileCard({ file, onClose }: FileCardProps) {
   }, [file.fileId])
 
   return (
-    <div className="border border-gray-200 rounded-lg overflow-hidden bg-white shrink-0">
+    <div className="border-2 border-gray-300 rounded-xl overflow-hidden bg-white shadow-sm shrink-0">
       {/* Card header */}
-      <div className="flex items-center justify-between px-3 py-2 bg-gray-50 border-b border-gray-200">
+      <div className="flex items-center justify-between px-3 py-2.5 bg-gray-100 border-b-2 border-gray-300">
         <span className="text-xs font-semibold text-gray-700 truncate flex-1 mr-2">
           📄 {file.fileName}
         </span>
         <button
           onClick={() => onClose(file.fileId)}
-          className="text-gray-400 hover:text-gray-600 text-sm leading-none shrink-0"
+          className="text-gray-400 hover:text-gray-700 text-sm leading-none shrink-0 font-bold"
           title="Close"
         >
           ✕
         </button>
       </div>
 
-      {/* Card body — independently scrollable, fixed max-height ~200px */}
-      <div className="overflow-y-auto max-h-52 bg-gray-50">
+      {/* Card body — independently scrollable, ~15% taller than before (max-h-60 ≈ 240px) */}
+      <div className="overflow-y-auto max-h-60 bg-white">
         {loading && (
-          <div className="flex items-center justify-center py-6 text-gray-400 text-xs">
+          <div className="flex items-center justify-center py-8 text-gray-400 text-xs">
             Loading…
           </div>
         )}
@@ -69,11 +69,11 @@ function FileCard({ file, onClose }: FileCardProps) {
           <table className="w-full border-collapse font-mono text-xs">
             <tbody>
               {lines.map(line => (
-                <tr key={line.n} className="hover:bg-gray-100">
-                  <td className="select-none text-right text-gray-400 pr-3 pl-2 w-8 py-0.5 align-top">
+                <tr key={line.n} className="hover:bg-gray-50">
+                  <td className="select-none text-right text-gray-400 pr-3 pl-2 w-8 py-0.5 align-top border-r border-gray-100">
                     {line.n}
                   </td>
-                  <td className="whitespace-pre-wrap break-all text-gray-800 pr-2 py-0.5 align-top">
+                  <td className="whitespace-pre-wrap break-all text-gray-800 pr-2 pl-2 py-0.5 align-top">
                     {line.text}
                   </td>
                 </tr>

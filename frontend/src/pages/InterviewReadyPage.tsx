@@ -10,9 +10,6 @@ const MODE_LABEL: Record<string, string> = {
   baseline:    'No AI baseline',
 }
 
-/**
- * Strip HTML tags and decode basic entities for the plain-text export.
- */
 function htmlToPlainText(html: string): string {
   return html
     .replace(/<h[1-3][^>]*>/gi, '\n\n')
@@ -29,6 +26,50 @@ function htmlToPlainText(html: string): string {
     .replace(/&nbsp;/g, ' ')
     .replace(/\n{3,}/g, '\n\n')
     .trim()
+}
+
+/**
+ * Convert plain-text protocol content to structured HTML — same logic as
+ * ProtocolEditorPanel's enrichPlainText(). Applied when the stored content
+ * has no HTML tags (i.e. never been opened in the editor yet).
+ */
+function enrichPlainText(raw: string): string {
+  if (/<[a-z][\s\S]*>/i.test(raw)) return raw  // already HTML — return as-is
+
+  const lines = raw.split('\n')
+  const parts: string[] = []
+
+  for (const line of lines) {
+    const t = line.trim()
+    if (!t) { parts.push('<p></p>'); continue }
+
+    // Section header: all-caps line or ---...--- separator
+    if (t === t.toUpperCase() && t.length > 2 && /[A-Z]/.test(t)) {
+      parts.push(`<h2>${esc(t)}</h2>`)
+      continue
+    }
+    if (/^---/.test(t) && /---$/.test(t)) {
+      parts.push(`<h2>${esc(t.replace(/^-+\s*/, '').replace(/\s*-+$/, ''))}</h2>`)
+      continue
+    }
+    // Question line
+    if (/^Q\d+[.:)]/.test(t)) {
+      parts.push(`<h3>${esc(t)}</h3>`)
+      continue
+    }
+    // Probe / sub-item
+    if (/^\[/.test(t) || /^Probe:/.test(t)) {
+      parts.push(`<p><em>${esc(t)}</em></p>`)
+      continue
+    }
+    parts.push(`<p>${esc(t)}</p>`)
+  }
+
+  return parts.join('')
+}
+
+function esc(s: string): string {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 }
 
 export function InterviewReadyPage() {
@@ -110,11 +151,11 @@ export function InterviewReadyPage() {
           </p>
         </div>
 
-        {/* Protocol — rendered read-only */}
+        {/* Protocol — enrich plain text to HTML if not already, then render read-only */}
         {htmlContent ? (
           <div
             className="protocol-view"
-            dangerouslySetInnerHTML={{ __html: htmlContent }}
+            dangerouslySetInnerHTML={{ __html: enrichPlainText(htmlContent) }}
           />
         ) : (
           <p className="text-gray-400 italic text-center py-12">

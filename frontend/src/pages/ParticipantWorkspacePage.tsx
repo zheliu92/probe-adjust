@@ -30,7 +30,7 @@ export function ParticipantWorkspacePage() {
   const navigate = useNavigate()
   const { mode, sessionId } = useSessionStore()
   const { study, fetchStudy } = useStudyStore()
-  const { participant, analysisRequests, fetchWorkspace } = useWorkspaceStore()
+  const { participant, analysisRequests, fetchWorkspace, error: workspaceError } = useWorkspaceStore()
 
   // Modal viewer — used in findings/suggestions mode for citation clicks
   const [viewerTarget, setViewerTarget] = useState<ViewerTarget | null>(null)
@@ -112,6 +112,27 @@ export function ParticipantWorkspacePage() {
 
   function handleCloseBaselineFile(fileId: string) {
     setBaselineOpenFiles(prev => prev.filter(f => f.fileId !== fileId))
+  }
+
+  // If the stored participant ID no longer exists on the server (e.g. Render
+  // redeployed and wiped the ephemeral DB), clear the stale session and send
+  // the user back to session setup rather than looping on 404 errors.
+  if (workspaceError === 'PARTICIPANT_NOT_FOUND') {
+    useSessionStore.getState().clear()
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center space-y-3 max-w-sm px-6">
+          <div className="text-4xl">🔄</div>
+          <p className="text-gray-700 font-semibold">Session data not found</p>
+          <p className="text-sm text-gray-500">
+            The participant data was not found on the server. This can happen when the backend restarts and clears its database. Please start a new session.
+          </p>
+          <button className="btn-primary" onClick={() => navigate('/conduct')}>
+            Start new session
+          </button>
+        </div>
+      </div>
+    )
   }
 
   if (!mode) {

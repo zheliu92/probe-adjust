@@ -34,7 +34,14 @@ export const useWorkspaceStore = create<WorkspaceState>((set, get) => ({
       ])
       set({ participant, analysisRequests: requests, loading: false })
     } catch (e: any) {
-      set({ error: e.message, loading: false })
+      // 404 means the participant no longer exists (e.g. Render redeployed and
+      // wiped the ephemeral SQLite DB). Signal this specifically so the workspace
+      // page can redirect the user back to the session setup screen.
+      const is404 = e?.response?.status === 404
+      set({
+        error: is404 ? 'PARTICIPANT_NOT_FOUND' : e.message,
+        loading: false,
+      })
     }
   },
 
