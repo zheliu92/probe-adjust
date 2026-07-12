@@ -53,7 +53,7 @@ export function BlockCard({ block }: Props) {
     <div
       ref={setNodeRef}
       style={style}
-      className={`flex items-center gap-2 px-3 py-2.5 mb-2 rounded-lg border-l-4 border ${cfg.border} ${cfg.bg}`}
+      className={`flex items-center gap-2 px-3 py-2.5 h-full border-l-4 ${cfg.border} ${cfg.bg}`}
     >
       {/* Drag handle */}
       <div
