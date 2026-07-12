@@ -3,6 +3,10 @@ backend/*.db
 backend/*.db-shm
 backend/*.db-wal
 
+# Dev/test scripts
+backend/check_db.py
+backend/test_analysis.py
+
 # Uploaded files and interaction logs (study data — keep out of git)
 backend/uploads/
 backend/logs/
