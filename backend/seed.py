@@ -9,6 +9,7 @@ already exists, the script exits cleanly with a message.
 
 Mock data location: ../mock-data/simulated-study/
 """
+from __future__ import annotations
 
 import json
 import os

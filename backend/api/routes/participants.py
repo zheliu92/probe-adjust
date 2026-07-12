@@ -4,6 +4,8 @@ Participant management routes.
 POST /studies/{id}/participants/upload-zip  — Upload a zip of participant data,
     auto-creates participant profile with label derived from filename.
 """
+from __future__ import annotations
+
 import io
 import re
 import uuid
